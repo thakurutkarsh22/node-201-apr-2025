@@ -1,0 +1,540 @@
+{
+	"info": {
+		"_postman_id": "afa0a8f8-f3c6-4162-8303-2c756f9f9149",
+		"name": "Node-201-apr-2025",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "4924294"
+	},
+	"item": [
+		{
+			"name": "Session2 Activity",
+			"item": [
+				{
+					"name": "get all users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://127.0.0.1:8088/api/v1/activity/users"
+					},
+					"response": [
+						{
+							"name": "get all users",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": "http://127.0.0.1:8088/api/v1/activity/users"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "10796"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2a2c-QqlMcS+uWLEtLhtaJFoTmRavlx8\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 02 Apr 2025 16:20:10 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"gender\": \"male\",\n        \"name\": {\n            \"title\": \"Mr\",\n            \"first\": \"Esat\",\n            \"last\": \"Erginsoy\"\n        },\n        \"location\": {\n            \"street\": {\n                \"number\": 4519,\n                \"name\": \"Bağdat Cd\"\n            },\n            \"city\": \"Adana\",\n            \"state\": \"Kocaeli\",\n            \"country\": \"Turkey\",\n            \"postcode\": 47349,\n            \"coordinates\": {\n                \"latitude\": \"76.9367\",\n                \"longitude\": \"-21.6399\"\n            },\n            \"timezone\": {\n                \"offset\": \"-12:00\",\n                \"description\": \"Eniwetok, Kwajalein\"\n            }\n        },\n        \"email\": \"esat.erginsoy@example.com\",\n        \"login\": {\n            \"uuid\": \"6607d086-7159-4c26-beb1-280c9f9cbf35\",\n            \"username\": \"silverbutterfly239\",\n            \"password\": \"this\",\n            \"salt\": \"EguLWlzm\",\n            \"md5\": \"fff8edaa8b92ccf1283839f28368f429\",\n            \"sha1\": \"12e9d6a8efbfedc940abfad65b34a639c3e7241e\",\n            \"sha256\": \"299e745d7f3c73c5e7a4a26f363da726ed964e155b3fbfd25d4b5c17cd2a6513\"\n        },\n        \"dob\": {\n            \"date\": \"1972-05-19T14:21:16.262Z\",\n            \"age\": 49\n        },\n        \"registered\": {\n            \"date\": \"2003-02-04T00:44:47.204Z\",\n            \"age\": 18\n        },\n        \"phone\": \"(596)-879-1384\",\n        \"cell\": \"(719)-718-6526\",\n        \"id\": {\n            \"name\": \"\",\n            \"value\": null\n        },\n        \"picture\": {\n            \"large\": \"https://randomuser.me/api/portraits/men/78.jpg\",\n            \"medium\": \"https://randomuser.me/api/portraits/med/men/78.jpg\",\n            \"thumbnail\": \"https://randomuser.me/api/portraits/thumb/men/78.jpg\"\n        },\n        \"nat\": \"TR\"\n    },\n    {\n        \"gender\": \"female\",\n        \"name\": {\n            \"title\": \"Mrs\",\n            \"first\": \"Emily\",\n            \"last\": \"Holmes\"\n        },\n        \"location\": {\n            \"street\": {\n                \"number\": 6851,\n                \"name\": \"Harrison Ct\"\n            },\n            \"city\": \"Odessa\",\n            \"state\": \"New York\",\n            \"country\": \"United States\",\n            \"postcode\": 80620,\n            \"coordinates\": {\n                \"latitude\": \"79.9632\",\n                \"longitude\": \"148.5308\"\n            },\n            \"timezone\": {\n                \"offset\": \"+10:00\",\n                \"description\": \"Eastern Australia, Guam, Vladivostok\"\n            }\n        },\n        \"email\": \"emily.holmes@example.com\",\n        \"login\": {\n            \"uuid\": \"468fa5aa-c00e-4f71-951f-607a79b26299\",\n            \"username\": \"whitegorilla108\",\n            \"password\": \"bearbear\",\n            \"salt\": \"ac59Bfhv\",\n            \"md5\": \"c86c4356af624a4a9b7c55ef71345b52\",\n            \"sha1\": \"ad491dc877412d244397425c2debd09942a6d927\",\n            \"sha256\": \"f5e7e6f7a2cd6bb559cc2323dc13d5e77e47a16090fa0dc03d79df1e8132926b\"\n        },\n        \"dob\": {\n            \"date\": \"1971-03-17T06:09:20.435Z\",\n            \"age\": 50\n        },\n        \"registered\": {\n            \"date\": \"2014-01-27T07:56:54.282Z\",\n            \"age\": 7\n        },\n        \"phone\": \"(671)-315-6645\",\n        \"cell\": \"(388)-814-9940\",\n        \"id\": {\n            \"name\": \"SSN\",\n            \"value\": \"999-16-2379\"\n        },\n        \"picture\": {\n            \"large\": \"https://randomuser.me/api/portraits/women/42.jpg\",\n            \"medium\": \"https://randomuser.me/api/portraits/med/women/42.jpg\",\n            \"thumbnail\": \"https://randomuser.me/api/portraits/thumb/women/42.jpg\"\n        },\n        \"nat\": \"US\"\n    },\n    {\n        \"gender\": \"female\",\n        \"name\": {\n            \"title\": \"Mrs\",\n            \"first\": \"Sedef\",\n            \"last\": \"Korol\"\n        },\n        \"location\": {\n            \"street\": {\n                \"number\": 6731,\n                \"name\": \"Talak Göktepe Cd\"\n            },\n            \"city\": \"Siirt\",\n            \"state\": \"Ankara\",\n            \"country\": \"Turkey\",\n            \"postcode\": 88745,\n            \"coordinates\": {\n                \"latitude\": \"79.0993\",\n                \"longitude\": \"62.8297\"\n            },\n            \"timezone\": {\n                \"offset\": \"+4:00\",\n                \"description\": \"Abu Dhabi, Muscat, Baku, Tbilisi\"\n            }\n        },\n        \"email\": \"sedef.korol@example.com\",\n        \"login\": {\n            \"uuid\": \"e88aa4b1-db92-4d51-a868-cbd567600046\",\n            \"username\": \"orangepeacock720\",\n            \"password\": \"galaxy\",\n            \"salt\": \"TLj1wgiF\",\n            \"md5\": \"b28c862a224dc1af6ee62b02c5d8e714\",\n            \"sha1\": \"31d129682304db0d7bb33c0bd5f27b1cc3f36b9b\",\n            \"sha256\": \"ccf2e8cd69a59d3b1fcc8f276611c10b800c0b54579aee6a7e507b601a246eec\"\n        },\n        \"dob\": {\n            \"date\": \"1991-08-13T15:41:39.584Z\",\n            \"age\": 30\n        },\n        \"registered\": {\n            \"date\": \"2008-09-29T17:46:57.067Z\",\n            \"age\": 13\n        },\n        \"phone\": \"(430)-002-4613\",\n        \"cell\": \"(152)-922-9272\",\n        \"id\": {\n            \"name\": \"\",\n            \"value\": null\n        },\n        \"picture\": {\n            \"large\": \"https://randomuser.me/api/portraits/women/40.jpg\",\n            \"medium\": \"https://randomuser.me/api/portraits/med/women/40.jpg\",\n            \"thumbnail\": \"https://randomuser.me/api/portraits/thumb/women/40.jpg\"\n        },\n        \"nat\": \"TR\"\n    },\n    {\n        \"gender\": \"male\",\n        \"name\": {\n            \"title\": \"Mr\",\n            \"first\": \"Abel\",\n            \"last\": \"Robin\"\n        },\n        \"location\": {\n            \"street\": {\n                \"number\": 9444,\n                \"name\": \"Rue Louis-Blanqui\"\n            },\n            \"city\": \"Villeurbanne\",\n            \"state\": \"Haute-Marne\",\n            \"country\": \"France\",\n            \"postcode\": 18458,\n            \"coordinates\": {\n                \"latitude\": \"3.6579\",\n                \"longitude\": \"-28.4596\"\n            },\n            \"timezone\": {\n                \"offset\": \"+1:00\",\n                \"description\": \"Brussels, Copenhagen, Madrid, Paris\"\n            }\n        },\n        \"email\": \"abel.robin@example.com\",\n        \"login\": {\n            \"uuid\": \"0e7fef61-213b-4e20-b6cf-b4d05a7ac79c\",\n            \"username\": \"silverzebra760\",\n            \"password\": \"harvard\",\n            \"salt\": \"jflR3ib0\",\n            \"md5\": \"d83d73274e06025f27039758d7052723\",\n            \"sha1\": \"b1d097362fd77b20d2245fdaa88528582108ba8a\",\n            \"sha256\": \"d5827d0b6fc6b4038288d795ba1775403055e717fb8f06b4f0da40cf987912b1\"\n        },\n        \"dob\": {\n            \"date\": \"1959-01-30T21:19:48.345Z\",\n            \"age\": 62\n        },\n        \"registered\": {\n            \"date\": \"2016-07-01T06:04:29.928Z\",\n            \"age\": 5\n        },\n        \"phone\": \"02-64-67-46-70\",\n        \"cell\": \"06-01-89-83-60\",\n        \"id\": {\n            \"name\": \"INSEE\",\n            \"value\": \"1NNaN60914050 01\"\n        },\n        \"picture\": {\n            \"large\": \"https://randomuser.me/api/portraits/men/1.jpg\",\n            \"medium\": \"https://randomuser.me/api/portraits/med/men/1.jpg\",\n            \"thumbnail\": \"https://randomuser.me/api/portraits/thumb/men/1.jpg\"\n        },\n        \"nat\": \"FR\"\n    },\n    {\n        \"gender\": \"female\",\n        \"name\": {\n            \"title\": \"Miss\",\n            \"first\": \"Ella\",\n            \"last\": \"Gordon\"\n        },\n        \"location\": {\n            \"street\": {\n                \"number\": 1638,\n                \"name\": \"High Street\"\n            },\n            \"city\": \"Liverpool\",\n            \"state\": \"Gwent\",\n            \"country\": \"United Kingdom\",\n            \"postcode\": \"N5W 1ZR\",\n            \"coordinates\": {\n                \"latitude\": \"14.4239\",\n                \"longitude\": \"104.2970\"\n            },\n            \"timezone\": {\n                \"offset\": \"-8:00\",\n                \"description\": \"Pacific Time (US & Canada)\"\n            }\n        },\n        \"email\": \"ella.gordon@example.com\",\n        \"login\": {\n            \"uuid\": \"55322486-4169-4554-98ec-5882450c637e\",\n            \"username\": \"smallgoose562\",\n            \"password\": \"timothy\",\n            \"salt\": \"fzJwvrfG\",\n            \"md5\": \"97c6856a1c40ecf99d344f2f63475a45\",\n            \"sha1\": \"a2fefffef33fc8cd2e509952042f0a7355659062\",\n            \"sha256\": \"dd1d5c37301a7862df86f486a8d9a024396ac6412693f17b1124fd51351b1701\"\n        },\n        \"dob\": {\n            \"date\": \"1972-01-25T19:02:24.052Z\",\n            \"age\": 49\n        },\n        \"registered\": {\n            \"date\": \"2004-12-29T03:31:52.228Z\",\n            \"age\": 17\n        },\n        \"phone\": \"016973 73466\",\n        \"cell\": \"0723-136-987\",\n        \"id\": {\n            \"name\": \"NINO\",\n            \"value\": \"CE 52 62 71 D\"\n        },\n        \"picture\": {\n            \"large\": \"https://randomuser.me/api/portraits/women/30.jpg\",\n            \"medium\": \"https://randomuser.me/api/portraits/med/women/30.jpg\",\n            \"thumbnail\": \"https://randomuser.me/api/portraits/thumb/women/30.jpg\"\n        },\n        \"nat\": \"GB\"\n    },\n    {\n        \"gender\": \"female\",\n        \"name\": {\n            \"title\": \"Mrs\",\n            \"first\": \"Alice\",\n            \"last\": \"Hughes\"\n        },\n        \"location\": {\n            \"street\": {\n                \"number\": 9258,\n                \"name\": \"Universal Drive\"\n            },\n            \"city\": \"Dunedin\",\n            \"state\": \"Waikato\",\n            \"country\": \"New Zealand\",\n            \"postcode\": 15816,\n            \"coordinates\": {\n                \"latitude\": \"62.3833\",\n                \"longitude\": \"140.0106\"\n            },\n            \"timezone\": {\n                \"offset\": \"-3:30\",\n                \"description\": \"Newfoundland\"\n            }\n        },\n        \"email\": \"alice.hughes@example.com\",\n        \"login\": {\n            \"uuid\": \"0465ee2d-1897-42ad-bd8b-9406b675067a\",\n            \"username\": \"sadmeercat333\",\n            \"password\": \"legion\",\n            \"salt\": \"IKBhQ2RZ\",\n            \"md5\": \"66ddcab0e52be3732f660ee980d688ab\",\n            \"sha1\": \"caca5f8f647cf3a45d2cc80ddd05e0359efa8b01\",\n            \"sha256\": \"1629b9f52752c10c8ee0312aa4a8633f140915747f5908297c34ed5a9b37b4b1\"\n        },\n        \"dob\": {\n            \"date\": \"1947-09-13T10:21:44.663Z\",\n            \"age\": 74\n        },\n        \"registered\": {\n            \"date\": \"2009-04-04T04:55:57.217Z\",\n            \"age\": 12\n        },\n        \"phone\": \"(343)-034-6515\",\n        \"cell\": \"(122)-377-6905\",\n        \"id\": {\n            \"name\": \"\",\n            \"value\": null\n        },\n        \"picture\": {\n            \"large\": \"https://randomuser.me/api/portraits/women/67.jpg\",\n            \"medium\": \"https://randomuser.me/api/portraits/med/women/67.jpg\",\n            \"thumbnail\": \"https://randomuser.me/api/portraits/thumb/women/67.jpg\"\n        },\n        \"nat\": \"NZ\"\n    },\n    {\n        \"gender\": \"male\",\n        \"name\": {\n            \"title\": \"Mr\",\n            \"first\": \"Zachary\",\n            \"last\": \"Gagné\"\n        },\n        \"location\": {\n            \"street\": {\n                \"number\": 2204,\n                \"name\": \"Dalhousie Ave\"\n            },\n            \"city\": \"Sherbrooke\",\n            \"state\": \"British Columbia\",\n            \"country\": \"Canada\",\n            \"postcode\": \"R9Q 5B3\",\n            \"coordinates\": {\n                \"latitude\": \"-63.4895\",\n                \"longitude\": \"-78.4307\"\n            },\n            \"timezone\": {\n                \"offset\": \"-4:00\",\n                \"description\": \"Atlantic Time (Canada), Caracas, La Paz\"\n            }\n        },\n        \"email\": \"zachary.gagne@example.com\",\n        \"login\": {\n            \"uuid\": \"f5435c11-4416-4699-89ae-6ac198cfd62d\",\n            \"username\": \"redtiger480\",\n            \"password\": \"monica\",\n            \"salt\": \"ptgxyKMH\",\n            \"md5\": \"af2daa6f3ff82a983b409ab4f106c4c1\",\n            \"sha1\": \"e841d3f01582aa6cfb2e638ddce6e823c7c19e34\",\n            \"sha256\": \"0122aa48a9cb31096018b7c6272e797062f804702014a68be605bb6fde6be512\"\n        },\n        \"dob\": {\n            \"date\": \"1980-09-07T19:06:04.558Z\",\n            \"age\": 41\n        },\n        \"registered\": {\n            \"date\": \"2016-05-01T13:08:26.961Z\",\n            \"age\": 5\n        },\n        \"phone\": \"657-984-1814\",\n        \"cell\": \"433-497-9651\",\n        \"id\": {\n            \"name\": \"\",\n            \"value\": null\n        },\n        \"picture\": {\n            \"large\": \"https://randomuser.me/api/portraits/men/7.jpg\",\n            \"medium\": \"https://randomuser.me/api/portraits/med/men/7.jpg\",\n            \"thumbnail\": \"https://randomuser.me/api/portraits/thumb/men/7.jpg\"\n        },\n        \"nat\": \"CA\"\n    },\n    {\n        \"gender\": \"male\",\n        \"name\": {\n            \"title\": \"Monsieur\",\n            \"first\": \"Dorian\",\n            \"last\": \"Dupont\"\n        },\n        \"location\": {\n            \"street\": {\n                \"number\": 5318,\n                \"name\": \"Rue Denfert-Rochereau\"\n            },\n            \"city\": \"Satigny\",\n            \"state\": \"Fribourg\",\n            \"country\": \"Switzerland\",\n            \"postcode\": 6649,\n            \"coordinates\": {\n                \"latitude\": \"-51.0566\",\n                \"longitude\": \"-39.5269\"\n            },\n            \"timezone\": {\n                \"offset\": \"-2:00\",\n                \"description\": \"Mid-Atlantic\"\n            }\n        },\n        \"email\": \"dorian.dupont@example.com\",\n        \"login\": {\n            \"uuid\": \"3368ac49-ed3f-4539-b495-7636a6977ad4\",\n            \"username\": \"purplefrog534\",\n            \"password\": \"dragonfl\",\n            \"salt\": \"31m8unLo\",\n            \"md5\": \"38bbd080308b495e2d9136f36a46f07d\",\n            \"sha1\": \"221455c168e33591dcbf0ba21aade05dca3774ec\",\n            \"sha256\": \"facfc1fb4fede6fe756815800a68c28eea47df78f6cd0494f962006070ca811f\"\n        },\n        \"dob\": {\n            \"date\": \"1967-09-20T14:06:37.612Z\",\n            \"age\": 54\n        },\n        \"registered\": {\n            \"date\": \"2006-05-14T16:49:46.513Z\",\n            \"age\": 15\n        },\n        \"phone\": \"076 644 68 22\",\n        \"cell\": \"076 493 48 40\",\n        \"id\": {\n            \"name\": \"AVS\",\n            \"value\": \"756.6682.1819.81\"\n        },\n        \"picture\": {\n            \"large\": \"https://randomuser.me/api/portraits/men/37.jpg\",\n            \"medium\": \"https://randomuser.me/api/portraits/med/men/37.jpg\",\n            \"thumbnail\": \"https://randomuser.me/api/portraits/thumb/men/37.jpg\"\n        },\n        \"nat\": \"CH\"\n    },\n    {\n        \"gender\": \"male\",\n        \"name\": {\n            \"title\": \"Mr\",\n            \"first\": \"Curtis\",\n            \"last\": \"Jonk\"\n        },\n        \"location\": {\n            \"street\": {\n                \"number\": 1630,\n                \"name\": \"Fedde Schurerstrjitte\"\n            },\n            \"city\": \"Sibrandahus\",\n            \"state\": \"Limburg\",\n            \"country\": \"Netherlands\",\n            \"postcode\": 88260,\n            \"coordinates\": {\n                \"latitude\": \"39.8848\",\n                \"longitude\": \"-58.5151\"\n            },\n            \"timezone\": {\n                \"offset\": \"-7:00\",\n                \"description\": \"Mountain Time (US & Canada)\"\n            }\n        },\n        \"email\": \"curtis.jonk@example.com\",\n        \"login\": {\n            \"uuid\": \"25228c7d-bd9b-40fb-8a3e-614c265f6826\",\n            \"username\": \"browntiger458\",\n            \"password\": \"odyssey\",\n            \"salt\": \"R1JSc9Td\",\n            \"md5\": \"4f6e624ae33ae21def3fec4bcd18a773\",\n            \"sha1\": \"585c50d9b15c8e079a299b2496deafcc7b56959e\",\n            \"sha256\": \"ef49aa927c462dcc324b4b771b402c7134913a63435b2f3ef5cbd9384ca99375\"\n        },\n        \"dob\": {\n            \"date\": \"1948-05-06T18:40:05.646Z\",\n            \"age\": 73\n        },\n        \"registered\": {\n            \"date\": \"2006-11-07T17:41:49.835Z\",\n            \"age\": 15\n        },\n        \"phone\": \"(143)-945-1414\",\n        \"cell\": \"(897)-913-9825\",\n        \"id\": {\n            \"name\": \"BSN\",\n            \"value\": \"26356646\"\n        },\n        \"picture\": {\n            \"large\": \"https://randomuser.me/api/portraits/men/78.jpg\",\n            \"medium\": \"https://randomuser.me/api/portraits/med/men/78.jpg\",\n            \"thumbnail\": \"https://randomuser.me/api/portraits/thumb/men/78.jpg\"\n        },\n        \"nat\": \"NL\"\n    },\n    {\n        \"gender\": \"male\",\n        \"name\": {\n            \"title\": \"Mr\",\n            \"first\": \"Adrian\",\n            \"last\": \"Ibañez\"\n        },\n        \"location\": {\n            \"street\": {\n                \"number\": 3457,\n                \"name\": \"Avenida de América\"\n            },\n            \"city\": \"Toledo\",\n            \"state\": \"Extremadura\",\n            \"country\": \"Spain\",\n            \"postcode\": 89378,\n            \"coordinates\": {\n                \"latitude\": \"-17.7592\",\n                \"longitude\": \"-13.2008\"\n            },\n            \"timezone\": {\n                \"offset\": \"0:00\",\n                \"description\": \"Western Europe Time, London, Lisbon, Casablanca\"\n            }\n        },\n        \"email\": \"adrian.ibanez@example.com\",\n        \"login\": {\n            \"uuid\": \"06750d9e-84d3-4cd1-8f89-1710213d2576\",\n            \"username\": \"orangemouse182\",\n            \"password\": \"yamaha\",\n            \"salt\": \"ItYmXZgb\",\n            \"md5\": \"f4b8e6ef1198c79e7b2b0d18d883c537\",\n            \"sha1\": \"650789f510ab9233c0e47a5f8267d5a252a6c3d9\",\n            \"sha256\": \"0d266a4fd4c5978911a721206342d2d463abb6a2c1529db4e2c7cd521d5279cd\"\n        },\n        \"dob\": {\n            \"date\": \"1969-12-21T05:29:40.561Z\",\n            \"age\": 52\n        },\n        \"registered\": {\n            \"date\": \"2004-04-07T17:13:47.274Z\",\n            \"age\": 17\n        },\n        \"phone\": \"911-281-343\",\n        \"cell\": \"603-374-881\",\n        \"id\": {\n            \"name\": \"DNI\",\n            \"value\": \"98872672-G\"\n        },\n        \"picture\": {\n            \"large\": \"https://randomuser.me/api/portraits/men/0.jpg\",\n            \"medium\": \"https://randomuser.me/api/portraits/med/men/0.jpg\",\n            \"thumbnail\": \"https://randomuser.me/api/portraits/thumb/men/0.jpg\"\n        },\n        \"nat\": \"ES\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "get female users using query params",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8088/api/v1/activity/users/search?gender=male",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8088",
+							"path": [
+								"api",
+								"v1",
+								"activity",
+								"users",
+								"search"
+							],
+							"query": [
+								{
+									"key": "gender",
+									"value": "male"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get all users Copy",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8088/api/v1/activity/users/search?gender=male",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8088",
+									"path": [
+										"api",
+										"v1",
+										"activity",
+										"users",
+										"search"
+									],
+									"query": [
+										{
+											"key": "gender",
+											"value": "male"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "6480"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1950-0xQNGixQ3kf2PvlijqvATr2q0vk\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 02 Apr 2025 16:24:38 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"gender\": \"male\",\n        \"name\": {\n            \"title\": \"Mr\",\n            \"first\": \"Esat\",\n            \"last\": \"Erginsoy\"\n        },\n        \"location\": {\n            \"street\": {\n                \"number\": 4519,\n                \"name\": \"Bağdat Cd\"\n            },\n            \"city\": \"Adana\",\n            \"state\": \"Kocaeli\",\n            \"country\": \"Turkey\",\n            \"postcode\": 47349,\n            \"coordinates\": {\n                \"latitude\": \"76.9367\",\n                \"longitude\": \"-21.6399\"\n            },\n            \"timezone\": {\n                \"offset\": \"-12:00\",\n                \"description\": \"Eniwetok, Kwajalein\"\n            }\n        },\n        \"email\": \"esat.erginsoy@example.com\",\n        \"login\": {\n            \"uuid\": \"6607d086-7159-4c26-beb1-280c9f9cbf35\",\n            \"username\": \"silverbutterfly239\",\n            \"password\": \"this\",\n            \"salt\": \"EguLWlzm\",\n            \"md5\": \"fff8edaa8b92ccf1283839f28368f429\",\n            \"sha1\": \"12e9d6a8efbfedc940abfad65b34a639c3e7241e\",\n            \"sha256\": \"299e745d7f3c73c5e7a4a26f363da726ed964e155b3fbfd25d4b5c17cd2a6513\"\n        },\n        \"dob\": {\n            \"date\": \"1972-05-19T14:21:16.262Z\",\n            \"age\": 49\n        },\n        \"registered\": {\n            \"date\": \"2003-02-04T00:44:47.204Z\",\n            \"age\": 18\n        },\n        \"phone\": \"(596)-879-1384\",\n        \"cell\": \"(719)-718-6526\",\n        \"id\": {\n            \"name\": \"\",\n            \"value\": null\n        },\n        \"picture\": {\n            \"large\": \"https://randomuser.me/api/portraits/men/78.jpg\",\n            \"medium\": \"https://randomuser.me/api/portraits/med/men/78.jpg\",\n            \"thumbnail\": \"https://randomuser.me/api/portraits/thumb/men/78.jpg\"\n        },\n        \"nat\": \"TR\"\n    },\n    {\n        \"gender\": \"male\",\n        \"name\": {\n            \"title\": \"Mr\",\n            \"first\": \"Abel\",\n            \"last\": \"Robin\"\n        },\n        \"location\": {\n            \"street\": {\n                \"number\": 9444,\n                \"name\": \"Rue Louis-Blanqui\"\n            },\n            \"city\": \"Villeurbanne\",\n            \"state\": \"Haute-Marne\",\n            \"country\": \"France\",\n            \"postcode\": 18458,\n            \"coordinates\": {\n                \"latitude\": \"3.6579\",\n                \"longitude\": \"-28.4596\"\n            },\n            \"timezone\": {\n                \"offset\": \"+1:00\",\n                \"description\": \"Brussels, Copenhagen, Madrid, Paris\"\n            }\n        },\n        \"email\": \"abel.robin@example.com\",\n        \"login\": {\n            \"uuid\": \"0e7fef61-213b-4e20-b6cf-b4d05a7ac79c\",\n            \"username\": \"silverzebra760\",\n            \"password\": \"harvard\",\n            \"salt\": \"jflR3ib0\",\n            \"md5\": \"d83d73274e06025f27039758d7052723\",\n            \"sha1\": \"b1d097362fd77b20d2245fdaa88528582108ba8a\",\n            \"sha256\": \"d5827d0b6fc6b4038288d795ba1775403055e717fb8f06b4f0da40cf987912b1\"\n        },\n        \"dob\": {\n            \"date\": \"1959-01-30T21:19:48.345Z\",\n            \"age\": 62\n        },\n        \"registered\": {\n            \"date\": \"2016-07-01T06:04:29.928Z\",\n            \"age\": 5\n        },\n        \"phone\": \"02-64-67-46-70\",\n        \"cell\": \"06-01-89-83-60\",\n        \"id\": {\n            \"name\": \"INSEE\",\n            \"value\": \"1NNaN60914050 01\"\n        },\n        \"picture\": {\n            \"large\": \"https://randomuser.me/api/portraits/men/1.jpg\",\n            \"medium\": \"https://randomuser.me/api/portraits/med/men/1.jpg\",\n            \"thumbnail\": \"https://randomuser.me/api/portraits/thumb/men/1.jpg\"\n        },\n        \"nat\": \"FR\"\n    },\n    {\n        \"gender\": \"male\",\n        \"name\": {\n            \"title\": \"Mr\",\n            \"first\": \"Zachary\",\n            \"last\": \"Gagné\"\n        },\n        \"location\": {\n            \"street\": {\n                \"number\": 2204,\n                \"name\": \"Dalhousie Ave\"\n            },\n            \"city\": \"Sherbrooke\",\n            \"state\": \"British Columbia\",\n            \"country\": \"Canada\",\n            \"postcode\": \"R9Q 5B3\",\n            \"coordinates\": {\n                \"latitude\": \"-63.4895\",\n                \"longitude\": \"-78.4307\"\n            },\n            \"timezone\": {\n                \"offset\": \"-4:00\",\n                \"description\": \"Atlantic Time (Canada), Caracas, La Paz\"\n            }\n        },\n        \"email\": \"zachary.gagne@example.com\",\n        \"login\": {\n            \"uuid\": \"f5435c11-4416-4699-89ae-6ac198cfd62d\",\n            \"username\": \"redtiger480\",\n            \"password\": \"monica\",\n            \"salt\": \"ptgxyKMH\",\n            \"md5\": \"af2daa6f3ff82a983b409ab4f106c4c1\",\n            \"sha1\": \"e841d3f01582aa6cfb2e638ddce6e823c7c19e34\",\n            \"sha256\": \"0122aa48a9cb31096018b7c6272e797062f804702014a68be605bb6fde6be512\"\n        },\n        \"dob\": {\n            \"date\": \"1980-09-07T19:06:04.558Z\",\n            \"age\": 41\n        },\n        \"registered\": {\n            \"date\": \"2016-05-01T13:08:26.961Z\",\n            \"age\": 5\n        },\n        \"phone\": \"657-984-1814\",\n        \"cell\": \"433-497-9651\",\n        \"id\": {\n            \"name\": \"\",\n            \"value\": null\n        },\n        \"picture\": {\n            \"large\": \"https://randomuser.me/api/portraits/men/7.jpg\",\n            \"medium\": \"https://randomuser.me/api/portraits/med/men/7.jpg\",\n            \"thumbnail\": \"https://randomuser.me/api/portraits/thumb/men/7.jpg\"\n        },\n        \"nat\": \"CA\"\n    },\n    {\n        \"gender\": \"male\",\n        \"name\": {\n            \"title\": \"Monsieur\",\n            \"first\": \"Dorian\",\n            \"last\": \"Dupont\"\n        },\n        \"location\": {\n            \"street\": {\n                \"number\": 5318,\n                \"name\": \"Rue Denfert-Rochereau\"\n            },\n            \"city\": \"Satigny\",\n            \"state\": \"Fribourg\",\n            \"country\": \"Switzerland\",\n            \"postcode\": 6649,\n            \"coordinates\": {\n                \"latitude\": \"-51.0566\",\n                \"longitude\": \"-39.5269\"\n            },\n            \"timezone\": {\n                \"offset\": \"-2:00\",\n                \"description\": \"Mid-Atlantic\"\n            }\n        },\n        \"email\": \"dorian.dupont@example.com\",\n        \"login\": {\n            \"uuid\": \"3368ac49-ed3f-4539-b495-7636a6977ad4\",\n            \"username\": \"purplefrog534\",\n            \"password\": \"dragonfl\",\n            \"salt\": \"31m8unLo\",\n            \"md5\": \"38bbd080308b495e2d9136f36a46f07d\",\n            \"sha1\": \"221455c168e33591dcbf0ba21aade05dca3774ec\",\n            \"sha256\": \"facfc1fb4fede6fe756815800a68c28eea47df78f6cd0494f962006070ca811f\"\n        },\n        \"dob\": {\n            \"date\": \"1967-09-20T14:06:37.612Z\",\n            \"age\": 54\n        },\n        \"registered\": {\n            \"date\": \"2006-05-14T16:49:46.513Z\",\n            \"age\": 15\n        },\n        \"phone\": \"076 644 68 22\",\n        \"cell\": \"076 493 48 40\",\n        \"id\": {\n            \"name\": \"AVS\",\n            \"value\": \"756.6682.1819.81\"\n        },\n        \"picture\": {\n            \"large\": \"https://randomuser.me/api/portraits/men/37.jpg\",\n            \"medium\": \"https://randomuser.me/api/portraits/med/men/37.jpg\",\n            \"thumbnail\": \"https://randomuser.me/api/portraits/thumb/men/37.jpg\"\n        },\n        \"nat\": \"CH\"\n    },\n    {\n        \"gender\": \"male\",\n        \"name\": {\n            \"title\": \"Mr\",\n            \"first\": \"Curtis\",\n            \"last\": \"Jonk\"\n        },\n        \"location\": {\n            \"street\": {\n                \"number\": 1630,\n                \"name\": \"Fedde Schurerstrjitte\"\n            },\n            \"city\": \"Sibrandahus\",\n            \"state\": \"Limburg\",\n            \"country\": \"Netherlands\",\n            \"postcode\": 88260,\n            \"coordinates\": {\n                \"latitude\": \"39.8848\",\n                \"longitude\": \"-58.5151\"\n            },\n            \"timezone\": {\n                \"offset\": \"-7:00\",\n                \"description\": \"Mountain Time (US & Canada)\"\n            }\n        },\n        \"email\": \"curtis.jonk@example.com\",\n        \"login\": {\n            \"uuid\": \"25228c7d-bd9b-40fb-8a3e-614c265f6826\",\n            \"username\": \"browntiger458\",\n            \"password\": \"odyssey\",\n            \"salt\": \"R1JSc9Td\",\n            \"md5\": \"4f6e624ae33ae21def3fec4bcd18a773\",\n            \"sha1\": \"585c50d9b15c8e079a299b2496deafcc7b56959e\",\n            \"sha256\": \"ef49aa927c462dcc324b4b771b402c7134913a63435b2f3ef5cbd9384ca99375\"\n        },\n        \"dob\": {\n            \"date\": \"1948-05-06T18:40:05.646Z\",\n            \"age\": 73\n        },\n        \"registered\": {\n            \"date\": \"2006-11-07T17:41:49.835Z\",\n            \"age\": 15\n        },\n        \"phone\": \"(143)-945-1414\",\n        \"cell\": \"(897)-913-9825\",\n        \"id\": {\n            \"name\": \"BSN\",\n            \"value\": \"26356646\"\n        },\n        \"picture\": {\n            \"large\": \"https://randomuser.me/api/portraits/men/78.jpg\",\n            \"medium\": \"https://randomuser.me/api/portraits/med/men/78.jpg\",\n            \"thumbnail\": \"https://randomuser.me/api/portraits/thumb/men/78.jpg\"\n        },\n        \"nat\": \"NL\"\n    },\n    {\n        \"gender\": \"male\",\n        \"name\": {\n            \"title\": \"Mr\",\n            \"first\": \"Adrian\",\n            \"last\": \"Ibañez\"\n        },\n        \"location\": {\n            \"street\": {\n                \"number\": 3457,\n                \"name\": \"Avenida de América\"\n            },\n            \"city\": \"Toledo\",\n            \"state\": \"Extremadura\",\n            \"country\": \"Spain\",\n            \"postcode\": 89378,\n            \"coordinates\": {\n                \"latitude\": \"-17.7592\",\n                \"longitude\": \"-13.2008\"\n            },\n            \"timezone\": {\n                \"offset\": \"0:00\",\n                \"description\": \"Western Europe Time, London, Lisbon, Casablanca\"\n            }\n        },\n        \"email\": \"adrian.ibanez@example.com\",\n        \"login\": {\n            \"uuid\": \"06750d9e-84d3-4cd1-8f89-1710213d2576\",\n            \"username\": \"orangemouse182\",\n            \"password\": \"yamaha\",\n            \"salt\": \"ItYmXZgb\",\n            \"md5\": \"f4b8e6ef1198c79e7b2b0d18d883c537\",\n            \"sha1\": \"650789f510ab9233c0e47a5f8267d5a252a6c3d9\",\n            \"sha256\": \"0d266a4fd4c5978911a721206342d2d463abb6a2c1529db4e2c7cd521d5279cd\"\n        },\n        \"dob\": {\n            \"date\": \"1969-12-21T05:29:40.561Z\",\n            \"age\": 52\n        },\n        \"registered\": {\n            \"date\": \"2004-04-07T17:13:47.274Z\",\n            \"age\": 17\n        },\n        \"phone\": \"911-281-343\",\n        \"cell\": \"603-374-881\",\n        \"id\": {\n            \"name\": \"DNI\",\n            \"value\": \"98872672-G\"\n        },\n        \"picture\": {\n            \"large\": \"https://randomuser.me/api/portraits/men/0.jpg\",\n            \"medium\": \"https://randomuser.me/api/portraits/med/men/0.jpg\",\n            \"thumbnail\": \"https://randomuser.me/api/portraits/thumb/men/0.jpg\"\n        },\n        \"nat\": \"ES\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "get a user way1 using query params",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8088/api/v1/activity/user?name=asdas",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8088",
+							"path": [
+								"api",
+								"v1",
+								"activity",
+								"user"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "asdas"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get a user way1 using query params",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8088/api/v1/activity/user?name=asdas",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8088",
+									"path": [
+										"api",
+										"v1",
+										"activity",
+										"user"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "asdas"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 02 Apr 2025 16:28:46 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								},
+								{
+									"key": "Content-Length",
+									"value": "0"
+								}
+							],
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "get a user way1 using query params",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8088/api/v1/activity/user?name=Esat",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8088",
+									"path": [
+										"api",
+										"v1",
+										"activity",
+										"user"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "Esat"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1050"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"41a-K/xV3UXRwq5+60XM7o6DPKCHiVU\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 02 Apr 2025 16:31:45 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"gender\": \"male\",\n    \"name\": {\n        \"title\": \"Mr\",\n        \"first\": \"Esat\",\n        \"last\": \"Erginsoy\"\n    },\n    \"location\": {\n        \"street\": {\n            \"number\": 4519,\n            \"name\": \"Bağdat Cd\"\n        },\n        \"city\": \"Adana\",\n        \"state\": \"Kocaeli\",\n        \"country\": \"Turkey\",\n        \"postcode\": 47349,\n        \"coordinates\": {\n            \"latitude\": \"76.9367\",\n            \"longitude\": \"-21.6399\"\n        },\n        \"timezone\": {\n            \"offset\": \"-12:00\",\n            \"description\": \"Eniwetok, Kwajalein\"\n        }\n    },\n    \"email\": \"esat.erginsoy@example.com\",\n    \"login\": {\n        \"uuid\": \"6607d086-7159-4c26-beb1-280c9f9cbf35\",\n        \"username\": \"silverbutterfly239\",\n        \"password\": \"this\",\n        \"salt\": \"EguLWlzm\",\n        \"md5\": \"fff8edaa8b92ccf1283839f28368f429\",\n        \"sha1\": \"12e9d6a8efbfedc940abfad65b34a639c3e7241e\",\n        \"sha256\": \"299e745d7f3c73c5e7a4a26f363da726ed964e155b3fbfd25d4b5c17cd2a6513\"\n    },\n    \"dob\": {\n        \"date\": \"1972-05-19T14:21:16.262Z\",\n        \"age\": 49\n    },\n    \"registered\": {\n        \"date\": \"2003-02-04T00:44:47.204Z\",\n        \"age\": 18\n    },\n    \"phone\": \"(596)-879-1384\",\n    \"cell\": \"(719)-718-6526\",\n    \"id\": {\n        \"name\": \"\",\n        \"value\": null\n    },\n    \"picture\": {\n        \"large\": \"https://randomuser.me/api/portraits/men/78.jpg\",\n        \"medium\": \"https://randomuser.me/api/portraits/med/men/78.jpg\",\n        \"thumbnail\": \"https://randomuser.me/api/portraits/thumb/men/78.jpg\"\n    },\n    \"nat\": \"TR\"\n}"
+						}
+					]
+				},
+				{
+					"name": "get a user way2 using params",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://127.0.0.1:8088/api/v1/activity/user/Esat"
+					},
+					"response": [
+						{
+							"name": "get a user way1 using query params Copy",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": "http://127.0.0.1:8088/api/v1/activity/user/Esat"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1050"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"41a-K/xV3UXRwq5+60XM7o6DPKCHiVU\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 02 Apr 2025 16:34:06 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"gender\": \"male\",\n    \"name\": {\n        \"title\": \"Mr\",\n        \"first\": \"Esat\",\n        \"last\": \"Erginsoy\"\n    },\n    \"location\": {\n        \"street\": {\n            \"number\": 4519,\n            \"name\": \"Bağdat Cd\"\n        },\n        \"city\": \"Adana\",\n        \"state\": \"Kocaeli\",\n        \"country\": \"Turkey\",\n        \"postcode\": 47349,\n        \"coordinates\": {\n            \"latitude\": \"76.9367\",\n            \"longitude\": \"-21.6399\"\n        },\n        \"timezone\": {\n            \"offset\": \"-12:00\",\n            \"description\": \"Eniwetok, Kwajalein\"\n        }\n    },\n    \"email\": \"esat.erginsoy@example.com\",\n    \"login\": {\n        \"uuid\": \"6607d086-7159-4c26-beb1-280c9f9cbf35\",\n        \"username\": \"silverbutterfly239\",\n        \"password\": \"this\",\n        \"salt\": \"EguLWlzm\",\n        \"md5\": \"fff8edaa8b92ccf1283839f28368f429\",\n        \"sha1\": \"12e9d6a8efbfedc940abfad65b34a639c3e7241e\",\n        \"sha256\": \"299e745d7f3c73c5e7a4a26f363da726ed964e155b3fbfd25d4b5c17cd2a6513\"\n    },\n    \"dob\": {\n        \"date\": \"1972-05-19T14:21:16.262Z\",\n        \"age\": 49\n    },\n    \"registered\": {\n        \"date\": \"2003-02-04T00:44:47.204Z\",\n        \"age\": 18\n    },\n    \"phone\": \"(596)-879-1384\",\n    \"cell\": \"(719)-718-6526\",\n    \"id\": {\n        \"name\": \"\",\n        \"value\": null\n    },\n    \"picture\": {\n        \"large\": \"https://randomuser.me/api/portraits/men/78.jpg\",\n        \"medium\": \"https://randomuser.me/api/portraits/med/men/78.jpg\",\n        \"thumbnail\": \"https://randomuser.me/api/portraits/thumb/men/78.jpg\"\n    },\n    \"nat\": \"TR\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Basic query",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8087/"
+			},
+			"response": [
+				{
+					"name": "405 Method not allowed",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": "http://127.0.0.1:8087/"
+					},
+					"status": "Method Not Allowed",
+					"code": 405,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 02 Apr 2025 15:20:21 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "this is not allowed"
+				},
+				{
+					"name": "200 everything is okay",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "http://127.0.0.1:8087/"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 02 Apr 2025 15:23:41 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "welcome to the home page  hello utkarsh"
+				}
+			]
+		},
+		{
+			"name": "fitenss",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8087/fitness"
+			},
+			"response": []
+		},
+		{
+			"name": "google.com",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "www.google.com"
+			},
+			"response": []
+		},
+		{
+			"name": "Basic query Express",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8088/"
+			},
+			"response": [
+				{
+					"name": "405 Method not allowed",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": "http://127.0.0.1:8087/"
+					},
+					"status": "Method Not Allowed",
+					"code": 405,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 02 Apr 2025 15:20:21 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "this is not allowed"
+				},
+				{
+					"name": "200 everything is okay",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "http://127.0.0.1:8087/"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 02 Apr 2025 15:23:41 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "welcome to the home page  hello utkarsh"
+				}
+			]
+		}
+	]
+}
