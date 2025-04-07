@@ -5,6 +5,7 @@ const { getAllUsers, getUserByGender, getUserByUserName, getUserByUserNameParams
 const UserActivityRouter = require("./Routes/UserActivityRoutes");
 const HomeRouter = require("./Routes/HomeRoutes");
 const dotEnv = require("dotenv");
+const { default: mongoose } = require("mongoose");
 
 // this line loads all the variable from .env file to process.env 
 dotEnv.config()
@@ -25,6 +26,14 @@ const MY_SECRET_PASSWORD = ENV_VARIABLES.MY_SECRET_PASSWORD;
 
 
 server.use("/api/v1/activity", UserActivityRouter)
+
+
+// DATABASE CONNECTION
+mongoose.connect("mongodb://localhost:27017").then(data => {
+    console.log("DATABASE IS UP");
+}).catch(err => {
+    console.log("error in connectign database");
+})
 
 
 server.listen(PORT, () => {
