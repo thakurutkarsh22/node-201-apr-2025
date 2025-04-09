@@ -8,4 +8,4 @@ const blogSchema = new Schema({
 })
 
 // blogs is name of collection
-module.exports = mongoose.model("blogs", blogSchema);
+module.exports = mongoose.model("Blog", blogSchema);

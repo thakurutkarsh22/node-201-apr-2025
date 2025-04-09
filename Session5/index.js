@@ -4,6 +4,7 @@ const userData = require("./usersData");
 const { getAllUsers, getUserByGender, getUserByUserName, getUserByUserNameParams } = require("./Controllers/UserActivityController");
 const UserActivityRouter = require("./Routes/UserActivityRoutes");
 const HomeRouter = require("./Routes/HomeRoutes");
+const BlogsRouter = require("./Routes/BlogsRoutes");
 const dotEnv = require("dotenv");
 const { default: mongoose } = require("mongoose");
 
@@ -17,6 +18,14 @@ const ENV_VARIABLES =  process.env;
 const server = express();
 const PORT = ENV_VARIABLES.PORT;
 
+
+// This server.user will work for EVERY PATH / every request 
+// express.json() - body parser
+server.use(express.json())
+
+
+
+// This server.user will work for "/"
 server.use("/", HomeRouter)
 
 
@@ -24,12 +33,17 @@ server.use("/", HomeRouter)
 const MY_SECRET_PASSWORD = ENV_VARIABLES.MY_SECRET_PASSWORD;
 
 
-
+// This server.user will work for "/api/v1/activity"
 server.use("/api/v1/activity", UserActivityRouter)
 
 
+// ROUTEER FOR BLOGS 
+
+server.use("/api/v1/blog", BlogsRouter)
+
+
 // DATABASE CONNECTION
-mongoose.connect("mongodb://localhost:27017").then(data => {
+mongoose.connect("mongodb+srv://asdf1234:asdf1234@cluster0.c3u6pt8.mongodb.net/crio").then(data => {
     console.log("DATABASE IS UP");
 }).catch(err => {
     console.log("error in connectign database");

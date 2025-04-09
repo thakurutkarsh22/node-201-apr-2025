@@ -29,7 +29,7 @@ server.use("/api/v1/activity", UserActivityRouter)
 
 
 // DATABASE CONNECTION
-mongoose.connect("mongodb://localhost:27017").then(data => {
+mongoose.connect("mongodb+srv://asdf1234:asdf1234@cluster0.c3u6pt8.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0").then(data => {
     console.log("DATABASE IS UP");
 }).catch(err => {
     console.log("error in connectign database");
