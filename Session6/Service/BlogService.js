@@ -1,4 +1,5 @@
 const BlogsModel = require("../Models/Blogs.Model");
+const UserModel = require("../Models/User.Model");
 
 
 // DEPENDENCY INJECTION
@@ -18,6 +19,32 @@ class BlogService {
             return error;
         }
     }
+
+
+
+    static async createUser(username, email, name) {
+
+        // this line is part of business logic
+        const nationality = "INDIAN";
+
+        // TAKING TO DB 
+        const userObj = UserModel({
+            username,
+            email,
+            name,
+            nationality
+        });
+
+        try {
+            // this line put thing in DB  (TALKING TO DB)
+            const response = await userObj.save();
+            return response 
+        } catch(error) {
+            return error;
+        }
+    }
+
+
 }
 
 module.exports = BlogService;
