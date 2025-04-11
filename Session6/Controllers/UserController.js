@@ -18,6 +18,7 @@ async function createNewUser(req, res) {
     const {error, value} = UserInputSchema.validate(body);
     if(error) {
         res.status(400).json({message: "please give the right schema", error})
+        return;
     }
 
 
