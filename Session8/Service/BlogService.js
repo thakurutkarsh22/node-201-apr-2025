@@ -22,7 +22,7 @@ class BlogService {
 
 
 
-    static async createUser(username, email, name) {
+    static async createUser(username, email, name, password) {
 
         // this line is part of business logic
         const nationality = "INDIAN";
@@ -32,6 +32,7 @@ class BlogService {
             username,
             email,
             name,
+            password,
             nationality
         });
 

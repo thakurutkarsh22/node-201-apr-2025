@@ -1,11 +1,13 @@
 const BlogService = require("../Service/BlogService");
 const { UserInputSchema } = require("../Validator/UserValidation");
 
+// its signup only 
 async function createNewUser(req, res) {
     const body = req.body;
     const name = body.name;
     const username = body.username;
     const email = body.email;
+    const password = body.password;
 
 
     // OLD TYPE OF VALIDATIOIN 
@@ -24,7 +26,7 @@ async function createNewUser(req, res) {
 
 
     try {
-        const response = await BlogService.createUser(username, email, name);
+        const response = await BlogService.createUser(username, email, name, password);
 
         if(response.errorResponse || response.error || response.errors) {
             res.status(400).json(response);

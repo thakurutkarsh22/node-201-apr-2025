@@ -14,6 +14,11 @@ const UserInputSchema = Joi.object().keys({
       .alphanum()
       .min(3)
       .max(30),
+    
+    password: Joi.string()
+      .min(3)
+      .max(30)
+      .required(),
 });
 
 
