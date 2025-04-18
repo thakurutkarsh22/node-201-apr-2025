@@ -6,6 +6,9 @@ const UserRouter = require("./Routes/UserRoute");
 const AuthRouter = require("./Routes/AuthRouter");
 const dotEnv = require("dotenv");
 const { default: mongoose } = require("mongoose");
+var cors = require('cors')
+
+
 
 dotEnv.config()
 const ENV_VARIABLES =  process.env;
@@ -14,6 +17,7 @@ const ENV_VARIABLES =  process.env;
 const server = express();
 const PORT = ENV_VARIABLES.PORT;
 
+server.use(cors()); // this only will make sure that MY server accept any requst from anywhere in the world 
 server.use(express.json())
 
 
