@@ -1,4 +1,6 @@
 const express = require("express");
+const configurationPassport = require('./Config/passport');
+const passport = require("passport");
 const UserActivityRouter = require("./Routes/UserActivityRoutes");
 const HomeRouter = require("./Routes/HomeRoutes");
 const BlogsRouter = require("./Routes/BlogsRoutes");
@@ -8,6 +10,9 @@ const dotEnv = require("dotenv");
 const { default: mongoose } = require("mongoose");
 var cors = require('cors')
 
+
+
+configurationPassport(passport) // through this line eveny one knows there is use of passport 
 
 
 dotEnv.config()

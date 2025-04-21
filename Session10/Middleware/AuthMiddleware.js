@@ -3,6 +3,12 @@ const JWT_KEY = "askjdhaskldjahslkfjdh123412l3kj12hkj3"
 const MY_SECRET_PASSWORD = "asdf1234"
 const jwt = require('jsonwebtoken');
 
+
+//  what technique I am using hre to auth ? (JTW/ password)
+// in modern websited we have Google login, fb, githublogin, apple login 
+
+
+// this AuthMiddleware is only just for JWT authentication 
 function AuthMiddleware(req, res, next) {
     const headers = req.headers;
     const authorization = headers.authorization;
@@ -29,5 +35,7 @@ function AuthMiddleware(req, res, next) {
     
     
 }
+
+
 
 module.exports = AuthMiddleware;
